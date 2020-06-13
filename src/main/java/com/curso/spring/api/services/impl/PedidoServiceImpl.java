@@ -2,7 +2,6 @@ package com.curso.spring.api.services.impl;
 
 import java.util.List;
 
-import javax.transaction.TransactionScoped;
 import javax.transaction.Transactional;
 
 import com.curso.spring.api.models.Detalle;

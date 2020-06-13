@@ -29,8 +29,9 @@ public class CategoryController {
     }
 
     @GetMapping("/categorias/{id}")
+    //@PreAuthorize("hasRole('ADMIN')") -> AUTORIZAR POR ROLES.
     public ResponseEntity<Response<Categoria>> getCategoriaPorId(@PathVariable int id) {
-        Optional categoria = categoriaRepository.findById(id);
+        Optional<Categoria> categoria = categoriaRepository.findById(id);
         Response<Categoria> response = new Response<>();
 
         if (!categoria.isPresent()) {

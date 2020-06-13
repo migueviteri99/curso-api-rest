@@ -58,17 +58,29 @@
       <version>RELEASE</version>
       <scope>test</scope>
     </dependency>
-    <!-- Swagger e Swagger UI -->
+    <!-- DEPENDENCIA DE SWAGGER PARA REALIZAR LA DOCUMENTACION
+      Y PRUEBAS DE LOS SERVICIOS REST-->
     <dependency>
       <groupId>io.springfox</groupId>
       <artifactId>springfox-swagger2</artifactId>
       <version>2.6.1</version>
     </dependency>
-
     <dependency>
       <groupId>io.springfox</groupId>
       <artifactId>springfox-swagger-ui</artifactId>
       <version>2.6.1</version>
+    </dependency>
+    <!-- DEPENDENCIA START CON CTRL+SHIFT+P EDIT STARTERS-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-security</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <!-- DEPENDENCIA DE JWT PARA IMPLEMENTAR TOCKENS-->
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt</artifactId>
+      <version>0.9.1</version>
     </dependency>
 
   </dependencies>
